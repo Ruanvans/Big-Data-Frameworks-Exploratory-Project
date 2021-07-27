@@ -1,0 +1,5 @@
+Query: 
+select max(w.queries) from (select user, count(query) as queries from logs group by user)w;
+
+output: 
+78

@@ -1,0 +1,5 @@
+query: 
+select count(distinct(user)) from logs where query not like "" and substr(time, 7, 2) in ("21" , "22");
+
+output: 
+67 
